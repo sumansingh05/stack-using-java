@@ -7,10 +7,7 @@ public class recSt {
         }
         int top = rt.pop();
         System.out.print(top + " ");
-        recursiveStack(rt);
-        
-        
-
+        recursiveStack(rt);        
     }
 
     public static void main(String[] args){
@@ -24,5 +21,4 @@ public class recSt {
         System.out.print("Recursive stack is: ");
         recursiveStack(st);
     }
-
 }
