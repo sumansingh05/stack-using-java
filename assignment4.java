@@ -1,7 +1,7 @@
 import java.util.Stack;
 public class assignment4 {
 
-    public static void recursiveStack
+    
     public static void main(String[] args) {
         Stack<Integer> st = new Stack<>();
         st.push(34);
