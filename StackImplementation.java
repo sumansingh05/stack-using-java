@@ -1,3 +1,4 @@
+
 class Stack{
     int maxSize;
     int[] stackArray;
@@ -19,7 +20,7 @@ class Stack{
             return;
         }
     }
-    
+
     //method to pop an element from the stack
     public int pop(){
         if(top == -1){
@@ -38,9 +39,31 @@ class Stack{
         return stackArray[top];
     }
 
+    //method to check if stack is empty
+    public boolean isEmpty(){
+        return (top == -1);
+    }
+
+    //method to check if stack is full
+    public boolean isFull(){
+        return (top == maxSize-1);
+    }
+
 }
 public class StackImplementation {
     public static void main(String[] args) {
+        Stack st = new Stack(5);
+
+        //pushing element onto the stack
+        st.push(10);
+        st.push(20);
+        st.push(30);
+
+        System.out.println("Top element of Stack is " + st.peek());
+
+        //popping element from stack
+        System.out.println("Popped element from Stack is " + st.pop());
+
         
     }
 }
